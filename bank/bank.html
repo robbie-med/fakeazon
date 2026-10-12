@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fakeazon Bank</title>
+  <link rel="icon" href="../icons/icon-32.png">
+  <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="../icons/icon-48.png" alt="" width="32" height="32">
+      <div>
+        <div class="brand-name">Fakeazon Bank</div>
+        <div class="brand-sub" id="account-name"></div>
+      </div>
+    </div>
+    <div class="top-balance" id="top-balance"></div>
+  </header>
+
+  <div id="perm-banner" class="banner" hidden>
+    <span>Fakeazon needs permission to run on amazon.com, or checkout won't be intercepted.</span>
+    <button type="button" class="btn primary" id="perm-grant">Allow on amazon.com</button>
+  </div>
+
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <a href="#overview" data-tab="overview">Overview</a>
+    <a href="#transactions" data-tab="transactions">Transactions</a>
+    <a href="#recurring" data-tab="recurring">Paychecks &amp; bills</a>
+    <a href="#orders" data-tab="orders">Orders</a>
+    <a href="#insights" data-tab="insights">Insights</a>
+    <a href="#settings" data-tab="settings">Settings</a>
+  </nav>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot">
+    Play money only. Nothing here is real, and Fakeazon blocks every real Amazon checkout.
+    <a href="https://www.amazon.com/" id="shop-link">Go shopping →</a>
+  </footer>
+
+  <script src="../vendor/chart.umd.min.js"></script>
+  <script src="../lib/store.js"></script>
+  <script src="bank.js"></script>
+</body>
+</html>

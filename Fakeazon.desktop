@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Fakeazon
+Comment=Shop Amazon with play money
+Exec=/home/user/Projects/Fakeazon/launch-fakeazon.sh
+Icon=/home/user/Projects/Fakeazon/icons/icon-128.png
+Terminal=false
+Categories=Network;WebBrowser;
+StartupWMClass=firefox

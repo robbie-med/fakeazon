@@ -1,0 +1,11 @@
+{
+  "name": "fakeazon",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Firefox extension: shop real Amazon, pay with a fake bank account",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "npx --yes web-ext@8 lint --ignore-files test package.json README.md CLAUDE.md launch-fakeazon.sh Fakeazon.desktop 'tools/**'",
+    "build": "npx --yes web-ext@8 build --overwrite-dest --ignore-files test package.json README.md CLAUDE.md launch-fakeazon.sh Fakeazon.desktop 'tools/**'"
+  }
+}
